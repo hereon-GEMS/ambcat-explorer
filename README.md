@@ -37,12 +37,13 @@ The **AMBCAT Explorer** is a modular React application bootstrapped using [Vite]
 - **TypeScript**: Provides static typing, safer refactoring, and better tooling support.
 - **pnpm**: Fast, disk-efficient package manager with strict version control and workspace support.
 
-### 🛠️ Project created with:
+## Development
+
+The project was initially created using:
 
 ```bash
 pnpm create vite ambcat-explorer --template react-ts
 ```
-## Development
 
 Start the development server, enabling network access with `--host` to allow access from other devices on the same network:
 
@@ -56,9 +57,28 @@ Build the production-ready static site:
 pnpm build
 ```
 
+Push to GitHub Pages:
+
+```bash
+pnpm run deploy
+```
+## Submodules
+
+This project uses `viv-ambcat` as a git submodule to integrate components like Ambivator. When cloning the repository, initialize and update the submodule with:
+
+```
+git clone --recurse-submodules https://github.com/hereon-GEMS/ambcat-explorer.git
+``` 
+
+To update the submodule later, run:
+
+``
+git submodule update --remote viv-ambcat
+```
+
 ## Acknowledgments and Funding
 
-This project is part of the **AMBCAT Digital Amber Catalogue** (`AMBCAT_Digital_Amber_Catalogue`), funded by the [Oscars project](https://oscars-project.eu/projects/ambcat-digital-amber-catalogue), which is supported by the Horizon Europe program.
+This project is part of the **AMBCAT Digital Amber Catalogue**, funded within the [Oscars project](https://oscars-project.eu/projects/ambcat-digital-amber-catalogue) initiative, which is supported by the [European Union's Horizon Europe research and innovation programme](https://research-and-innovation.ec.europa.eu/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-europe_en).
 
 The Helmholtz-Zentrum Hereon (HEREON) is the receiving institution responsible for AMBCAT within this funding scheme.
 
