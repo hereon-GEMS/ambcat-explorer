@@ -1,0 +1,3 @@
+[submodule "submodules/viv-ambcat"]
+	path = submodules/viv-ambcat
+	url = git@github.com:hereon-GEMS/viv-ambcat.git
