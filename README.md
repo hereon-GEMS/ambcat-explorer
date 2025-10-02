@@ -1,6 +1,6 @@
 # AMBCAT Explorer
 
-**AMBCAT Explorer** is the visualization component of the AMBCAT project, focused on high-resolution digital scans of amber fossils.
+[AMBCAT Explorer](https://hereon-gems.github.io/ambcat-explorer/) is the visualization component of the AMBCAT project, focused on high-resolution digital scans of amber fossils.
 
 Amber fossils provide a unique window into ancient ecosystems, offering insights into extinct organisms through remarkable preservation of both external and internal structures. Fossilised specimens are preserved 3-dimensionally, allowing detailed studies of surface features like hairs, scales, and flower structures, as well as rare preservation of internal soft tissues.
 
