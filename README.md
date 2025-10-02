@@ -26,6 +26,36 @@ In recent years, Kitware has expanded into web-based visualization through initi
 
 As part of the AMBCAT Explorer effort, we aim to evaluate convergence paths between emerging formats such as OME-Zarr and well-established visualization ecosystems like VTK and ParaView. This includes investigating compatibility, performance, and accessibility — with a long-term goal of integrating fossil tomography data into robust, extensible visualization pipelines backed by mature tooling.
 
+## ⚙️ Architecture Overview: React + Vite + TypeScript
+
+The **AMBCAT Explorer** is a modular React application bootstrapped using [Vite](https://vitejs.dev) with **TypeScript** support for strong typing and maintainability.
+
+### 💡 Why this stack?
+
+- **React**: Component-based UI ideal for modular data viewers and tools (e.g., Avivator, VTK.js).
+- **Vite**: Fast modern dev server and build tool, using ES modules in development and Rollup for production.
+- **TypeScript**: Provides static typing, safer refactoring, and better tooling support.
+- **pnpm**: Fast, disk-efficient package manager with strict version control and workspace support.
+
+### 🛠️ Project created with:
+
+```bash
+pnpm create vite ambcat-explorer --template react-ts
+```
+## Development
+
+Start the development server, enabling network access with `--host` to allow access from other devices on the same network:
+
+```bash
+pnpm dev --host
+```
+
+Build the production-ready static site:
+
+```bash
+pnpm build
+```
+
 ## Acknowledgments and Funding
 
 This project is part of the **AMBCAT Digital Amber Catalogue** (`AMBCAT_Digital_Amber_Catalogue`), funded by the [Oscars project](https://oscars-project.eu/projects/ambcat-digital-amber-catalogue), which is supported by the Horizon Europe program.
