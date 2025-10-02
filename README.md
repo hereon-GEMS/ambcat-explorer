@@ -66,15 +66,9 @@ pnpm run deploy
 
 This project uses `viv-ambcat` as a git submodule to integrate components like Ambivator. When cloning the repository, initialize and update the submodule with:
 
-```
+```bash
 git clone --recurse-submodules https://github.com/hereon-GEMS/ambcat-explorer.git
 ``` 
-
-To update the submodule later, run:
-
-``
-git submodule update --remote viv-ambcat
-```
 
 ## Acknowledgments and Funding
 
