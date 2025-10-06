@@ -1,0 +1,4 @@
+/* src/global.css */
+@import "tailwindcss" source(none);
+@source "./public/*.{html,js}";
+@plugin "daisyui";
