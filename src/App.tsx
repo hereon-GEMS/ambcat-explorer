@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import AppMainTab from './AppMainTab';
+import Collapsible from './Collapsible';
 
 import './global.css'; // Tailwind + DaisyUI styles
 
@@ -59,7 +60,12 @@ const App: React.FC = () => {
 			<AppMainTab foldable={true} defaultOpen={false} />
           </>
         )}
+      <Collapsible title="About" defaultOpen={false}>
+			<AppMainTab foldable={false} defaultOpen={false} />
+      </Collapsible>
       </main>
+
+
     </div>
   );
 };
