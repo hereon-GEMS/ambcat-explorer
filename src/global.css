@@ -2,7 +2,9 @@
 @plugin "daisyui";
 
 /*To enable centering of the app*/
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
   width: 100%;
   margin: 0;
@@ -15,4 +17,3 @@ html, body, #root {
   align-items: flex-start; /* or center for vertical center */
   background-color: var(--base-200);
 }
-

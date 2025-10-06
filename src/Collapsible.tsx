@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 interface CollapsibleProps {
   title: string;
@@ -18,14 +18,17 @@ const Collapsible: React.FC<CollapsibleProps> = ({
       <button
         className="btn btn-sm btn-outline mb-4 flex items-center gap-2"
         onClick={() => setIsOpen(!isOpen)}
-        aria-expanded={isOpen ? 'true' : 'false'}
+        aria-expanded={isOpen ? "true" : "false"}
         aria-controls={`section-${title}`}
       >
         {isOpen ? "➖" : "➕"} {title}
       </button>
 
       {isOpen && (
-        <div id={`section-${title}`} className="transition-all duration-300 ease-in-out">
+        <div
+          id={`section-${title}`}
+          className="transition-all duration-300 ease-in-out"
+        >
           {children}
         </div>
       )}

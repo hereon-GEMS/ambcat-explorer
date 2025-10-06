@@ -1,0 +1,5 @@
+# Ignore submodules folder entirely
+submodules/
+
+# Ignore README.md file
+README.md
