@@ -75,6 +75,8 @@ const App: React.FC = () => {
           <AppMainTab foldable={false} defaultOpen={false} />
         </Collapsible>
       </main>
+
+      {/* Footer */}
       <footer className="footer footer-center p-6 bg-base-300 text-base-content">
         <div>
           <p>

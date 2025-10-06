@@ -65,6 +65,11 @@ Push to GitHub Pages:
 pnpm run deploy
 ```
 
+Format code using Prettier:
+
+```bash
+pnpm prettier --write .
+```
 ## Submodules
 
 This project uses `viv-ambcat` as a git submodule to integrate components like Ambivator. When cloning the repository, initialize and update the submodule with:
