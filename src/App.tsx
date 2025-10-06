@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import AppMainTab from "./AppMainTab";
 import Collapsible from "./Collapsible";
+import PostViewer from "./PostViewer";
 
 import "./global.css"; // Tailwind + DaisyUI styles
 
@@ -28,13 +29,6 @@ const App: React.FC = () => {
           </a>
         </div>
         <div className="flex gap-2">
-          <button
-            className="btn btn-sm text-xl bg-[#aa61bb] text-white border-none hover:opacity-90"
-            onClick={() => setActiveTab("about")}
-          >
-            About
-          </button>
-
           <a
             href="https://github.com/hereon-GEMS/ambcat-explorer"
             target="_blank"
@@ -57,21 +51,27 @@ const App: React.FC = () => {
 
       {/* Main content */}
       <main className="flex-grow container mx-auto p-6">
-        {activeTab === "about" && (
+        <p className="mb-6 text-lg leading-relaxed">
+          <strong>AMBCAT</strong> is an Open Science initiative to digitize and
+          explore <strong>3D scans of amber fossils</strong>, providing a window
+          into ancient ecosystems through exceptional fossil preservation.
+        </p>
+        {/*        {activeTab === "about" && (
           <>
-            <p className="mb-6 text-lg leading-relaxed">
-              <strong>AMBCAT</strong> is an Open Science initiative to digitize
-              and explore <strong>3D scans of amber fossils</strong>, providing
-              a window into ancient ecosystems through exceptional fossil
-              preservation.
-            </p>
             <AppMainTab foldable={true} defaultOpen={false} />
           </>
-        )}
+        )}*/}
+        <Collapsible title="About" defaultOpen={false}>
+          <PostViewer path="/ambcat-explorer/posts/about.md" />
+        </Collapsible>
         <div className="mb-6">
           <h1 className="text-3xl font-bold mb-4">Dev Notes</h1>
+          <Collapsible title="Node.js pnpm and Vite" defaultOpen={false}>
+            <PostViewer path="/ambcat-explorer/posts/tooling-basics.md" />
+          </Collapsible>
         </div>
-        <Collapsible title="About" defaultOpen={false}>
+
+        <Collapsible title="Ambivator" defaultOpen={false}>
           <AppMainTab foldable={false} defaultOpen={false} />
         </Collapsible>
       </main>
