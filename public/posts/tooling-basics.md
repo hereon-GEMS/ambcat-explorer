@@ -31,12 +31,20 @@ nvm use --lts
 nvm ls
 ```
 
-If the output does not reflect the version expected from nvm, it usually indicates that the system's default Node.js installation is taking precedence. To resolve this, ensure that nvm is properly set up in your shell configuration file (e.g., `.bashrc`, `.zshrc`)
-.
+If the output does not reflect the version expected from nvm, it usually indicates that the system's default Node.js installation is taking precedence. To resolve this, ensure that nvm is properly set up in your shell configuration file (e.g., `.bashrc`, `.zshrc`).
+
+## npm
+**npm** (Node Package Manager) is the default package manager for Node.js. It facilitates the installation, management, and sharing of JavaScript packages and libraries. It is installed automatically with Node.js.
 
 ## pnpm
 
 **pnpm** is a fast, disk space-efficient package manager for JavaScript and TypeScript projects. It serves as an alternative to npm and Yarn, focusing on performance and efficient dependency management.
+
+To install pnpm, run the following command:
+
+```bash
+npm install -g pnpm
+```
 
 To run development server
 
