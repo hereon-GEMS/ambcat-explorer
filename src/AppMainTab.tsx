@@ -1,8 +1,31 @@
 // src/components/AppMainTab.tsx
-import React from 'react';
+import React, { useState } from 'react';
 
-const AppMainTab: React.FC = () => {
+interface AppMainTabProps {
+  foldable?: boolean;
+  defaultOpen?: boolean;
+}
+
+const AppMainTab: React.FC<AppMainTabProps> = ({ foldable = false, defaultOpen = false }) => {
+  const [isOpen, setIsOpen] = useState(defaultOpen);
+
+  const shouldShow = !foldable || isOpen;
+
   return (
+    <div>
+      {foldable && (
+        <button
+          className="btn btn-sm btn-outline mb-4 flex items-center gap-2"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {isOpen ? "➖ Hide Ambivator Info" : "➕ Show Ambivator Info"}
+        </button>
+      )}
+
+      {shouldShow && (
+        <div className="space-y-6">
+
+
     <div>
       <h2 className="text-2xl font-bold mb-4">Ambivator</h2>
       <p className="mb-4">
@@ -85,8 +108,13 @@ const AppMainTab: React.FC = () => {
 
     </div>
 
+
+        </div>
+      )}
+    </div>
   );
 };
+
 
 export default AppMainTab;
 
