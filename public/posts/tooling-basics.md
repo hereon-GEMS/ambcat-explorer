@@ -29,6 +29,9 @@ nvm use --lts
 
 # Display currently installed Node.js versions
 nvm ls
+
+# Display the current active Node.js version
+node -v
 ```
 
 If the output does not reflect the version expected from nvm, it usually indicates that the system's default Node.js installation is taking precedence. To resolve this, ensure that nvm is properly set up in your shell configuration file (e.g., `.bashrc`, `.zshrc`).

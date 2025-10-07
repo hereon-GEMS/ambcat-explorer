@@ -70,8 +70,11 @@ const App: React.FC = () => {
             <PostViewer path="/ambcat-explorer/posts/tooling-basics.md" />
           </Collapsible>
         </div>
+        <Collapsible title="Viv based viewers" defaultOpen={false}>
+            <PostViewer path="/ambcat-explorer/posts/viv_based_viewers.md" />
+        </Collapsible>
 
-        <Collapsible title="Ambivator" defaultOpen={false}>
+        <Collapsible title="http-server" defaultOpen={false}>
           <AppMainTab foldable={false} defaultOpen={false} />
         </Collapsible>
       </main>

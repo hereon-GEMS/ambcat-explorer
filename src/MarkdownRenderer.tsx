@@ -1,6 +1,7 @@
 // src/components/MarkdownRenderer.tsx
 import React from "react";
 import ReactMarkdown from "react-markdown";
+import rehypeRaw from 'rehype-raw';
 import { Light as SyntaxHighlighter } from "react-syntax-highlighter";
 // import languages you want to support, e.g. javascript, tsx, python
 import js from "react-syntax-highlighter/dist/esm/languages/hljs/javascript";
@@ -67,7 +68,6 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({
         {children}
       </a>
     ),
-
     // Images
     img: ({ src, alt, title, ...props }) => (
       <figure className="my-4">
@@ -189,7 +189,8 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({
     },
   };
 
-  return <ReactMarkdown components={components}>{markdown}</ReactMarkdown>;
+  return <ReactMarkdown components={components}
+    rehypePlugins={allowHtml ? [rehypeRaw] : []}>{markdown}</ReactMarkdown>;
 };
 
 export default MarkdownRenderer;
