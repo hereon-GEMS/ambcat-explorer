@@ -64,6 +64,9 @@ const App: React.FC = () => {
         <Collapsible title="About" defaultOpen={false}>
           <PostViewer path="/ambcat-explorer/posts/about.md" />
         </Collapsible>
+        <Collapsible title="Bioimaging File Formats" defaultOpen={false}>
+          <PostViewer path="/ambcat-explorer/posts/file_formats.md" />
+        </Collapsible>
         <div className="mb-6">
           <h1 className="text-3xl font-bold mb-4">Dev Notes</h1>
           <Collapsible title="Node.js pnpm and Vite" defaultOpen={false}>
