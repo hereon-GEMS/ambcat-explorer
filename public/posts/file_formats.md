@@ -1,6 +1,6 @@
 # Bioimaging File Formats
 
-Researchers have long been working with a wide variety of data formats, both proprietary and open, to store and share imaging data. Formats like **DICOM**, **TIFF**, and various raw data types, e.g. the [DEN format](https://kulvait.github.io/KCT_doc/den-format.html), have been used, creating fragmentation in the field. 
+Researchers have long been working with a wide variety of data formats, both proprietary and open, to store and share imaging data. Formats like **DICOM**, **TIFF**, and various raw data types, e.g. the [DEN format](https://kulvait.github.io/KCT_doc/den-format.html), have been used, creating fragmentation in the field.
 
 While some open formats were available, the lack of standardized metadata and a uniform structure for multi-dimensional data left bioimaging researchers facing significant challenges. This fragmented ecosystem of proprietary formats and non-interoperable systems made it increasingly difficult to manage the growing volumes of complex imaging data, particularly in **3D** and **4D** spaces.
 
@@ -41,4 +41,3 @@ For more details, check the [format specification in OME Data Model](https://ome
 **Zarr** itself is a **Python-rooted format** for **N-dimensional arrays**, initially developed as an advanced alternative to NumPy’s **.npy/.npz** formats. It supports **chunking** and **compression** natively, making it ideal for large datasets that don’t fit into memory. The **OME** community adopted **Zarr** due to its scalability and efficiency in handling large bioimaging datasets.
 
 For more details, read the [seminal paper on OME-Zarr](https://pubmed.ncbi.nlm.nih.gov/37428210/).
-

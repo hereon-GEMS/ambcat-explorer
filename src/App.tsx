@@ -74,7 +74,7 @@ const App: React.FC = () => {
           </Collapsible>
         </div>
         <Collapsible title="Viv based viewers" defaultOpen={false}>
-            <PostViewer path="/ambcat-explorer/posts/viv_based_viewers.md" />
+          <PostViewer path="/ambcat-explorer/posts/viv_based_viewers.md" />
         </Collapsible>
 
         <Collapsible title="http-server" defaultOpen={false}>
