@@ -2,8 +2,8 @@
 
 In addition to Viv, the team also maintains two other related projects:
 
-- **[Avivator](https://github.com/hms-dbmi/avivator)**: A component within the Viv monorepo.
-- **[Vizarr](https://github.com/hms-dbmi/vizarr)**: A standalone viewer for Zarr and OME-TIFF data.
+- **[Avivator](https://avivator.gehlenborglab.org/)**: A component within the Viv monorepo.
+- **[Vizarr](https://hms-dbmi.github.io/vizarr/?source=https://minio-dev.openmicroscopy.org/idr/v0.3/idr0062-blin-nuclearsegmentation/6001240.zarr&viewState={%22target%22:[135.5,137.5],%22zoom%22:2.1878828909098385})**: A standalone viewer for Zarr and OME-TIFF data. [Github repo](https://github.com/hms-dbmi/vizarr)
 
 **Ambivator viewer** is based on **Avivator**.
 
