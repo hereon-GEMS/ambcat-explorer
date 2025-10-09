@@ -269,15 +269,18 @@ const AppMainTab: React.FC<AppMainTabProps> = ({
 
               <div class="">
                 <span class="font-semibold">
-                  Import the CA Certificate into the Trusted Authorities Store
+                  Import the CA Certificate into the Trusted Authorities Store.
                 </span>
               </div>
 
+              <div class="alert alert-info mb-4">
+                 Download <a href="AMBCAT_CA.pem" download>AMBCAT_CA.pem ... certificate of the authority used for DESY network.</a>
+	          </div>
               <pre class="bg-base-200 p-4 rounded-md overflow-auto text-sm">
                 <code>
                   # Define the path to your PEM file and the store location for
                   trusted root certificates {"\n"}
-                  $pemFilePath = "C:\path\to\your\certificate.pem"{"\n"}
+                  $pemFilePath = "C:\path\to\AMBCAT_CA.pem"{"\n"}
                   $certStoreLocation = "Cert:\LocalMachine\Root"{"\n"}# Import
                   the certificate into the Trusted Root Certification
                   Authorities store {"\n"}

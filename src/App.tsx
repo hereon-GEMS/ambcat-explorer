@@ -73,6 +73,9 @@ const App: React.FC = () => {
             <PostViewer path="/ambcat-explorer/posts/tooling-basics.md" />
           </Collapsible>
         </div>
+        <Collapsible title="Zarr and OME-Zarr" defaultOpen={false}>
+            <PostViewer path="/ambcat-explorer/posts/zarr_format.md" />
+        </Collapsible>
         <Collapsible title="Viv based viewers" defaultOpen={false}>
           <PostViewer path="/ambcat-explorer/posts/viv_based_viewers.md" />
         </Collapsible>
