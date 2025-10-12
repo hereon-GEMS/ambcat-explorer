@@ -71,3 +71,12 @@ pnpm prettier --write .
 ## Vite
 
 **Vite** is a modern build tool and development server that provides a fast and efficient workflow for front-end development. It leverages native ES modules in the browser to enable instant server start and lightning-fast hot module replacement (HMR).
+
+### Troubleshooting
+
+The stack is sensitive to the version of Node.js and npm/pnpm used. Installing tools within Conda/Mamba environments can lead to issues. If you encounter problems, try running:
+
+```
+pnpm install
+pnpm update
+```
