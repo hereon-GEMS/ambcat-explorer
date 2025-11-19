@@ -83,6 +83,9 @@ const App: React.FC = () => {
         <Collapsible title="http-server" defaultOpen={false}>
           <AppMainTab foldable={false} defaultOpen={false} />
         </Collapsible>
+        <Collapsible title="Code maintenance" defaultOpen={false}>
+            <PostViewer path="/ambcat-explorer/posts/code_maintenance.md" />
+        </Collapsible>
       </main>
 
       {/* Footer */}
