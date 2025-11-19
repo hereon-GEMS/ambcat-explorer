@@ -86,6 +86,9 @@ const App: React.FC = () => {
         <Collapsible title="Code maintenance" defaultOpen={false}>
             <PostViewer path="/ambcat-explorer/posts/code_maintenance.md" />
         </Collapsible>
+        <Collapsible title="Rendering in React" defaultOpen={false}>
+            <PostViewer path="/ambcat-explorer/posts/tooling_reactive_rendering.md" />
+        </Collapsible>
       </main>
 
       {/* Footer */}
