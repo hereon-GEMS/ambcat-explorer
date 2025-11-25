@@ -11,7 +11,7 @@ export default defineConfig({
     server: {
     https: {
       key: fs.readFileSync(path.resolve(os.homedir(), 'server_keys/server-key.pem')),
-      cert: fs.readFileSync(path.resolve(os.homedir(), 'server_keys/server-cert-AMBCAT.pem')),
+      cert: fs.readFileSync(path.resolve(os.homedir(), 'server_keys/all-cert-AMBCAT.pem')),
     },
     host: true,
     port: 5173, // or your preferred port

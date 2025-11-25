@@ -294,6 +294,22 @@ const AppMainTab: React.FC<AppMainTabProps> = ({
                 will no longer show warnings when accessing your site using{" "}
                 <strong>HTTPS</strong>.
               </p>
+	      <div class="alert alert-warning mb-4">
+		<span class="font-semibold">
+		  Importing the CA into Linux Trusted Authorities
+		</span>
+	      </div>
+              <pre class="bg-base-200 p-4 rounded-md overflow-auto text-sm">
+		<code>
+		  # Copy the CA certificate to the system's trusted CA directory
+		  {"\n"}
+		  cp AMBCAT_CA.pem /usr/local/share/ca-certificates/AMBCAT_CA.crt
+		  {"\n"}# Update the system's CA certificates {"\n"}
+		  dpkg-reconfigure ca-certificates
+			{"\n"}#On Red Hat based systems, use: {"\n"}
+		  update-ca-trust extract
+		</code>
+	      </pre>
 
               <div class="alert alert-info mb-4">
                 <span class="font-semibold">Start HTTPS Server with CORS</span>
